@@ -11,6 +11,7 @@ app = Flask(__name__)
 # Get the directory of the current script
 current_dir = dirname(__file__)
 
+
 # @app.route('/verify/', methods=['POST'])
 # def verify_images():
 #     try:
