@@ -4,6 +4,5 @@ build:
   commands:
     build:
       - pip3 install -r requirements.txt
-      - pip3 install gunicorn
 run:
-  command: gunicorn app:app
+  command: python app.py
