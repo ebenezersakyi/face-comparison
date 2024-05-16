@@ -36,6 +36,7 @@ current_dir = dirname(__file__)
 
 
 
+
 @app.route('/verify/', methods=['POST'])
 def verify_images():
     try:
