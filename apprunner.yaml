@@ -5,5 +5,5 @@ build:
     build:
       - pip install -r requirements.txt
 run:
-  runtime-version: 3.10.14
+  runtime-version: 3.11.7
   command: python app.py
