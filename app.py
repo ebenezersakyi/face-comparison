@@ -8,6 +8,8 @@ from deepface import DeepFace
 
 app = Flask(__name__)
 
+DeepFace.build_model('VGG-Face')
+
 # Get the directory of the current script
 current_dir = dirname(__file__)
 
@@ -36,7 +38,7 @@ def verify_images():
         # print("img2_base64:", img2_base64)
 
         # Verify images using DeepFace
-        result = DeepFace.verify(img1_path=img1_base64, img2_path=img2_base64)
+        result = DeepFace.verify(img1_path=img1_base64, img2_path=img2_base64, model_name='VGG-Face')
 
         return jsonify({'data': result, "success": True}), 200
     except Exception as e:
