@@ -29,6 +29,9 @@ runtime_config:
 manual_scaling:
   instances: 1
 resources:
-  cpu: 1
-  memory_gb: 2.5
-  disk_size_gb: 15
+  cpu: 4
+  memory_gb: 4.5
+  disk_size_gb: 25
+  # cpu: 1
+  # memory_gb: 2.5
+  # disk_size_gb: 15
